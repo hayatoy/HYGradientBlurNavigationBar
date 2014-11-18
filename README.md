@@ -36,7 +36,7 @@ Usage
 [[HYGradientBlurNavigationBar appearance] setBarGradientDirection:RightBottomToLeftTop];
 ```
 
-**Make status bar color white**
+**Make status bar text color white**
   1. Set `View controller-based status bar appearance` to **NO** in `Info.plist`
   2. Add `[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];` to `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` in `AppDelegate.m`
 

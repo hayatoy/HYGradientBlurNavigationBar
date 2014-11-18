@@ -19,12 +19,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //[[HYGradientBlurNavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.8f green:0.8f blue:0.8f alpha:1.0f]];
+    //Sample Axial Gradient
+//    [[HYGradientBlurNavigationBar appearance] setBarTintColor:[UIColor colorWithRed:111.0/255.0f green:176.5f/255.0f blue:177.5f/255.0f alpha:1.0f]];
+//    [[HYGradientBlurNavigationBar appearance] setBarTintColors:[NSArray arrayWithObjects:
+//                            (id)[UIColor colorWithRed:161.0f/255.0f green:255.0f/255.0f blue:125.0f/255.0f alpha:0.2f].CGColor,
+//                            (id)[UIColor colorWithRed:61.0f/255.0f green:94.0f/255.0f blue:230.0f/255.0f alpha:0.2f].CGColor,nil]];
+//    [[HYGradientBlurNavigationBar appearance] setGradientType:Axial];
+//    [[HYGradientBlurNavigationBar appearance] setBarGradientDirection:LeftToRight];
+    
+    //Sample Radial Gradient
+    [[HYGradientBlurNavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
     [[HYGradientBlurNavigationBar appearance] setBarTintColors:[NSArray arrayWithObjects:
-                            (id)[UIColor colorWithRed:70.0f/255.0f green:137.0/255.0f blue:102.0f/255.0f alpha:0.65f].CGColor,
-                            (id)[UIColor colorWithRed:255.0f/255.0f green:176.0/255.0f blue:59.0f/255.0f alpha:0.65f].CGColor,
-                            (id)[UIColor colorWithRed:142.0f/255.0f green:40.0f/255.0f blue:0.0f/255.0f alpha:0.65f].CGColor,nil]];
-    [[HYGradientBlurNavigationBar appearance] setBarGradientDirection:LeftToRight];
+                            (id)[UIColor colorWithRed:243.0f/255.0f green:242.0f/255.0f blue:182.0f/255.0f alpha:0.9f].CGColor,
+                            (id)[UIColor colorWithRed:76.0f/255.0f green:152.0f/255.0f blue:175.0f/255.0f alpha:0.9f].CGColor,nil]];
+    [[HYGradientBlurNavigationBar appearance] setGradientType:Radial];
+    [[HYGradientBlurNavigationBar appearance] setBarGradientDirection:RightBottomToLeftTop];
+    
+
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     return YES;

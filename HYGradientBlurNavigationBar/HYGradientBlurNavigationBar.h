@@ -7,15 +7,27 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, GradientType) {
+    Axial,
+    Radial
+};
 typedef NS_ENUM(NSInteger, GradientDirection) {
     TopToBottom,
+    BottomToTop,
     LeftToRight,
+    RightToLeft,
     LeftTopToRightBottom,
-    RightTopToLeftBottom
+    LeftBottomToRightTop,
+    RightTopToLeftBottom,
+    RightBottomToLeftTop
 };
 
 @interface HYGradientBlurNavigationBar : UINavigationBar
 - (void)setBarTintColors:(NSArray *)barTintColors;
 - (void)setBarGradientDirection:(GradientDirection)direction;
+@property (nonatomic) GradientType gradientType;
 @end
 
+@interface HYGradientLayer : CALayer
+
+@end
